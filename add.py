@@ -28,9 +28,9 @@ cpass = configparser.RawConfigParser()
 cpass.read('config.data')
 
 try:
-    api_id = cpass['cred']['id']
-    api_hash = cpass['cred']['hash']
-    phone = cpass['cred']['phone']
+    api_id = cpass['cred']['5713703']
+    api_hash = cpass['cred']['69ebe6a0e2424083c0dfc9773998eca4']
+    phone = cpass['cred']['+919021084764']
     client = TelegramClient(phone, api_id, api_hash)
 except KeyError:
     os.system('clear')
